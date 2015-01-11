@@ -1,6 +1,6 @@
 <?php
 
-use \sndsgd\util\Classname;
+use \sndsgd\Classname;
 
 
 class ClassnameTest extends PHPUnit_Framework_TestCase

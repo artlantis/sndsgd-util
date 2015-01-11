@@ -1,9 +1,9 @@
 <?php
 
 use \org\bovigo\vfs\vfsStream;
-use \sndsgd\util\Json;
-use \sndsgd\util\Str;
-use \sndsgd\util\Temp;
+use \sndsgd\Json;
+use \sndsgd\Str;
+use \sndsgd\Temp;
 
 
 class JsonTest extends PHPUnit_Framework_TestCase
@@ -27,7 +27,7 @@ class JsonTest extends PHPUnit_Framework_TestCase
    }
 
    /**
-    * @covers \sndsgd\util\Json::getError
+    * @covers \sndsgd\Json::getError
     */
    public function testGetError()
    {
@@ -37,7 +37,7 @@ class JsonTest extends PHPUnit_Framework_TestCase
    }
 
    /**
-    * @covers \sndsgd\util\Json::encodeFile
+    * @covers \sndsgd\Json::encodeFile
     */
    public function testEncodeFile()
    {
@@ -57,7 +57,7 @@ class JsonTest extends PHPUnit_Framework_TestCase
    }
 
    /**
-    * @covers \sndsgd\util\Json::encodeFile
+    * @covers \sndsgd\Json::encodeFile
     */
    public function testEncodeFileFileWriteFailure()
    {
@@ -84,7 +84,7 @@ class JsonTest extends PHPUnit_Framework_TestCase
    }
 
    /**
-    * @covers \sndsgd\util\Json::decodeFile
+    * @covers \sndsgd\Json::decodeFile
     */
    public function testDecodeFileNotReadable()
    {
@@ -94,14 +94,14 @@ class JsonTest extends PHPUnit_Framework_TestCase
    }
 
    // /**
-   //  * @covers \sndsgd\util\Json::decodeFile
+   //  * @covers \sndsgd\Json::decodeFile
    //  */
    // public function testDecodeFileReadFailure()
    // {
    // }
 
    /**
-    * @covers \sndsgd\util\Json::decodeFile
+    * @covers \sndsgd\Json::decodeFile
     */
    public function testDecodeFileDecodeFailure()
    {
@@ -112,7 +112,7 @@ class JsonTest extends PHPUnit_Framework_TestCase
    }
 
    /**
-    * @covers \sndsgd\util\Json::decodeFile
+    * @covers \sndsgd\Json::decodeFile
     * @expectedException Exception
     */
    public function testDecodeFileBadTypeException()
@@ -123,7 +123,7 @@ class JsonTest extends PHPUnit_Framework_TestCase
    }
 
    /**
-    * @covers \sndsgd\util\Json::decodeFile
+    * @covers \sndsgd\Json::decodeFile
     */
    public function testDecodeFileSuccess()
    {
